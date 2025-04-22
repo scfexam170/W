@@ -1,4 +1,4 @@
-#Practical 1
+# implement Link Analysis
 ```
 
 !pip install requests beautifulsoup4
@@ -12,7 +12,7 @@ print("Netlocation: ",parsed_url.netloc)
 print("Path: ",parsed_url.path)
 print("Query: ",parsed_url.query)
 ```
-"""#Practical2 web graph"""
+#program to make a web graph
 ```
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -34,7 +34,8 @@ nx.draw(G,pos,with_labels = True, arrows=True)
 plt.title("Website Link Graph")
 plt.show()
 ```
-#Pr3
+#Pr3 simple crawling from Wikipedia using keywords
+
 ```
 import requests
 from bs4 import BeautifulSoup
@@ -48,7 +49,7 @@ def simple_crawler(keyword):
 keyword = input("Enter a keyword to search: ")
 simple_crawler(keyword)
 ```
-#Pr4
+#Pr4  fetch page content
 ```
 import requests
 def fetch_page(url):
@@ -66,7 +67,7 @@ page_content = fetch_page(url)
 if page_content:
     print(page_content)
 ```
-#Pr5
+#Pr5 Hits Algorithm
 ```
 import networkx as nx
 G = nx.DiGraph()
@@ -76,7 +77,7 @@ authority_score, hub_score = nx.hits(G)
 print(f"Authority Scores: {authority_score}")
 print(f"Hub Scores: {hub_score}")
 ```
-#Pr6
+#Pr6 Page Rank
 ```
 # Page rank using NetworkX
 import networkx as nx
@@ -94,7 +95,7 @@ nx.draw_networkx_edges(G, pos)
 nx.draw_networkx_labels(G, pos)
 plt.show()
 ```
-#Pr7
+#Pr7  summarize Text 
 ```
 !pip install sumy
 
@@ -125,7 +126,7 @@ to succeed him,
 summary = summarize_text(text)
 print(summary)
 ```
-#Prct 8
+#Prct 8 implement a Recommender System.
 ```
 !pip uninstall -y numpy
 !pip install numpy==1.23.5
